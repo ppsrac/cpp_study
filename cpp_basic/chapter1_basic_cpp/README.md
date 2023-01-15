@@ -112,3 +112,19 @@ char c1[10]="Hello";
     cout<<n<<'\n';
 ```
 `cin`의 경우 공백을 기준으로 여러개의 문자를 입력받지는 못하기 때문에 `cin.getline`을 사용한다. 
+
+2. `string` 클래스
+
+`string class`로는 문자열을 정의한다.
+```cpp
+    freopen("input.txt","r",stdin);
+    string song("Falling in love with you");
+    string elvis("Elvis Presley");
+
+    string singer;
+    getline(cin,singer);   
+    if (singer==elvis)
+        cout<<"Right!";
+    else
+        cout<<"Wrong!";
+```
