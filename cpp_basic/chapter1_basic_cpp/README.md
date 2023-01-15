@@ -85,8 +85,8 @@ C++의 경우 중간에 변수 선언을 사용할 수 있다.
 
 C 스트링은 `\0`으로 끝나는 `char` 배열을 의미한다. 예를 들어 
 ```cpp
-char name1[6]={'G','R','A','C','E','\0'} \ ;
-char name2[5]={'G','R','A','C','E'} \이건 그냥 배열;
+char name1[6]={'G','R','A','C','E','\0'};
+char name2[5]={'G','R','A','C','E'} //이건 그냥 배열;
 ```
 "Grace"는 'G','r','a','c','e','\0'로 이루어진 리터럴(literal)이다. 우리는 문자열 배열에 바로 리터럴을 대입해도 된다.
 ```cpp
@@ -101,7 +101,14 @@ char name4[]="Grace";
 ```cpp
 
 #include <cstring>
-
-int n=strlen("Hello");
-
+char c1[10]="Hello"; 
+    char c2[10];
+    char c3[10]="Hfll";
+    int n;
+    strcpy(c2,c1); //c2에 c1을 대입한다. 
+    n=strlen(c2); //n에 c2의 길이를 대입한다.
+    cout<<n<<'\n';
+    n=strcmp(c1,c3); //c1과 c3가 같은지 다른지 비교한다. 같으면 0을 출력, 만일 사전식 배열로 c1이 앞서면 1을 출력.
+    cout<<n<<'\n';
 ```
+`cin`의 경우 공백을 기준으로 여러개의 문자를 입력받지는 못하기 때문에 `cin.getline`을 사용한다. 
