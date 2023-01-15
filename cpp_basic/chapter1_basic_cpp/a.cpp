@@ -1,13 +1,10 @@
-#include <cstdio>  
-#include <iostream>
-using namespace std;
+#include <iostream>  
+#include <cstdio>
 
+using namespace std;
 int main(void) {
-	#ifndef ONLINE_JUDGE
-	freopen("input.txt","r",stdin);
-	#endif
+    freopen("input.txt", "r", stdin);
     int a;
     cin>>a;
     cout<<a;
-    return 0;
 }
