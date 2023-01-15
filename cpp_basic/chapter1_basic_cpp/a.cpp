@@ -3,15 +3,15 @@
 
 using namespace std;
 
+class Circle{
+public:
+    int radius;
+    int x,y;
+    double getArea();
+
+};
+
 int main(void) {
     freopen("input.txt","r",stdin);
-    string song("Falling in love with you");
-    string elvis("Elvis Presley");
-
-    string singer;
-    getline(cin,singer);
-    if (singer==elvis)
-        cout<<"Right!";
-    else
-        cout<<"Wrong!";
+    
 }
